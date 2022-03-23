@@ -1,0 +1,41 @@
+Function: global.
+Functions can be called from child window, and any window opened on the same domain.
+window.frames[0].frames[1].fname()
+
+Javascript Array = Java's array + list(LinkedList + ArrayList) + stack. 2 kinds of list.
+5 ways to declare array in Javascript: let/var/const arrName(name of array)
+arrName = new Array(100);/new Array(100);/[]/[1,23,54];/null;
+
+arr.splice - takes up-to-3 arguments; 
+nums.splice(3) deletes all elements from index 3 to the end
+delets 2 elements starting at index 0 - nums.splice(0, 2)
+Adds 3, 5 starting at index 0 - nums.splice(0, 0, 3, 5)
+
+<script>
+function showall(nums)
+{
+  for (let x of nums)
+    document.write(x + " ");
+  document.write("<br>");
+}
+let nums = [2, 4, 6, 8, 10];
+</script>
+
+
+shift = left_pop
+unshift = left_push
+
+nums.push(3434);
+nums[nums.length] = 3434
+nums.sort(function(x,y){return y-x;})
+
+Array can grow, shrink, remove elements, grow from head or tail, very flexible. Can sort array
+nums.sort();
+nums.sort()
+let x = [1, 2];
+let p = {id:"D100034", lastName:"Smith", firstName:"John", info:x};
+
+Javascript Object = Java's HashMap or HashTable or Property = associative = extension of an array
+Java's Property is restricted to string-to-string
+Very useful data structure.
+Object = {id:"D100034", lastName:"Smith", firstName:"John", info:x};
